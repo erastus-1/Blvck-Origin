@@ -1,0 +1,519 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href='https://fonts.googleapis.com/css?family=Carter+One&display=swap' rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}" />
+
+{% endblock %}
+
+{% block content%}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h1
+        style="font-style:  italic; font-weight: bold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
+        Black Origin</h1>
+      <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0044.jpg')}}" class="d-block w-100" alt="..."
+        height="300px">
+      <small><i>The best Urban Wear and photography accross Nairobi and East Africa at large</i></small>
+    </div>
+    <div class="col-md-8">
+      <h2
+        style="color: rgb(19, 15, 15);text-align: center; padding-top: 30px;font-weight: 900; padding-bottom: 30px; font-style: italic;">
+        WELCOME TO BLACK ORIGIN URBAN WEAR</h2>
+      <hr>
+      <p style="color: rgb(14, 15, 15);"> Through<b><i> BLACK ORIGIN</i></b> studios we are looking to indulge the art
+        society in our community to come out see proffessional photogtraphs through our platform.</br>
+        Our platform offers to give individuals a registeration form on our home section, where they can request for a
+        scheduled day to be photographed. Our application has some of recent works that we have done and you can be able
+        interact with us interms of comments or requests.</p>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px;">
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px; width: 400px;">
+              <img src="{{url_for('static',filename='photos/bl/IMG-20201230-WA0027.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/bl/IMG-20201230-WA0010.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/bl/IMG-20201230-WA0011.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/duo/IMG-20201230-WA0022.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/duo/IMG-20201230-WA0030.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/duo/IMG-20201230-WA0037.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/face/IMG-20201230-WA0018.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/face/IMG-20201230-WA0039.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/face/IMG-20201230-WA0041.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px;">
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px; width: 400px;">
+              <img src="{{url_for('static',filename='photos/gp/IMG-20201230-WA0001.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gp/IMG-20201230-WA0021.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gp/IMG-20201230-WA0023.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gp2/IMG-20201230-WA0034.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gp2/IMG-20201230-WA0035.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gp2/IMG-20201230-WA0036.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0026.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0042.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0044.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px;">
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px; width: 400px;">
+              <img src="{{url_for('static',filename='photos/ls/IMG-20201230-WA0000.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/ls/IMG-20201230-WA0015.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/ls/IMG-20201230-WA0032.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gal/IMG-20201230-WA0003.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gal/IMG-20201230-WA0024.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/gal/IMG-20201230-WA0025.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/men/IMG-20201230-WA0031.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/men/IMG-20201230-WA0033.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/men/IMG-20201230-WA0038.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px;">
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px; width: 400px;">
+              <img src="{{url_for('static',filename='photos/side/IMG-20201230-WA0028.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/side/IMG-20201230-WA0029.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/side/IMG-20201230-WA0040.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty/IMG-20201230-WA0002.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty/IMG-20201230-WA0019.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty/IMG-20201230-WA0020.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty2/IMG-20201230-WA0004.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty2/IMG-20201230-WA0005.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty2/IMG-20201230-WA0006.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px;">
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px; width: 400px;">
+              <img src="{{url_for('static',filename='photos/sty3/IMG-20201230-WA0012.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty3/IMG-20201230-WA0013.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty3/IMG-20201230-WA0014.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty4/IMG-20201230-WA0007.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty4/IMG-20201230-WA0008.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty4/IMG-20201230-WA0009.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 text-center">
+    <div class="card mr-2 d-inline-block shadow-lg">
+      <div class="card-img-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty5/IMG-20201230-WA0016.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty5/IMG-20201230-WA0017.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" style="height: 350px;">
+              <img src="{{url_for('static',filename='photos/sty5/IMG-20201230-WA0043.jpg')}}" class="d-block w-100"
+                alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark" style="margin-top: 20px;">
+  <div class="text-center text-white" style="text-align: center; padding-top: 10px;">
+    <div class="footer">
+      <img src="{{url_for('static',filename='photos/social/facebook.png')}}">
+      <img src="{{url_for('static',filename='photos/social/g_plus.png')}}">
+      <img src="{{url_for('static',filename='photos/social/pinterest.png')}}">
+      <img src="{{url_for('static',filename='photos/social/skype.png')}}">
+      <img src="{{url_for('static',filename='photos/social/twitter.png')}}">
+      <img src="{{url_for('static',filename='photos/social/you_tube.png')}}">
+      <p>Copyright</p>
+      <p>&copyBlackOriginUrbanWear <br />2020</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+  integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+{% endblock %}

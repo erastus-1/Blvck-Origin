@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index.css')}}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    {% if title %}
+    <title>Photo_spy Website {{title}}</title>
+    {% else %}
+    <title>Photo_spy Website</title>
+    {% endif %}
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-2 border-green rounded-0">
+        <div class="container-fluid">
+            <a href="/">
+                <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0042.jpg')}}" alt="" width="150px;" height="100px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav navbar-right">
+                    <hr>
+                    <li>
+                        <a href="{{url_for('main.contact')}}"style="color: white; font-size: large; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-message mr-3"></span> Contact us</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="{{url_for('auth.logout')}}"style="color: white; font-size: large; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-log-in mr-3"></span> Checkout</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="{{url_for('auth.login')}}"style="color: white; font-size: large; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-log-in mr-3"></span> Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>

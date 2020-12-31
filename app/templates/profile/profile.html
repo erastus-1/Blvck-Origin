@@ -1,0 +1,59 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="container" style="color: black;">
+  <div class="row">
+
+    <div class="col-md-2">
+
+      {% if user == current_user %}
+      <a href="{{url_for('main.update_profile',uname=user.username)}}"
+        style="color:black; font-size:30px; font-weight: bold;">Edit profile</a>
+      {% endif %}
+    </div>
+
+    <!--Display profile photo-->
+
+    <div class="col-md-7">
+      {% if user.profile_pic_path %}
+
+      <img src="{{url_for('static',filename=user.profile_pic_path)}}" alt="" class="img-thumbnail">
+
+      {%else%}
+      <p>No profile picture</p>
+
+      {% endif %}
+
+      {% if user == current_user %}
+      <form action="{{url_for('main.update_pic',uname=user.username)}}" method="post" enctype="multipart/form-data">
+
+        <input type="file" name="photo" class="form-control" required>
+        <input type="submit">
+      </form>
+      {% endif %}
+    </div>
+
+    <!-- displaying  Username-->
+    <div class="col-md-3">
+      <h3 style="color: black; font-weight: bold; font-size: 30px;"> {{user.username| capitalize}} </h3>
+
+      <!--Displaying user bio-->
+      {% if user.bio %}
+      <p> {{user.bio}}</p>
+      {%else%}
+      <p> {{user.username| capitalize}} has no bio </p>
+      {% endif %}
+      {% if user.area %}
+      <p> {{user.username}} Lives in {{user.area}}</p>
+      {%else%}
+      <p> {{user.username| capitalize}} has no location </p>
+      {% endif %}
+      {% if user.gender %}
+      <p> is {{user.gender}} Gender</p>
+      {%else%}
+      <p> {{user.username}} {{user.username| capitalize}} has no gender </p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
