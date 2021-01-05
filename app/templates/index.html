@@ -3,7 +3,7 @@
 
 {% block styles%}
 {{ super() }}
-<link rel="preconnect" href="https://fonts.gstatic.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,10 +25,9 @@
       <small><i>The best Urban Wear and photography accross Nairobi and East Africa at large</i></small>
     </div>
     <div class="col-md-8">
-      <h2
+     <h2
         style="color: rgb(19, 15, 15);text-align: center; padding-top: 30px;font-weight: 900; padding-bottom: 30px; font-style: italic;">
         WELCOME TO BLVCK ORIGIN URBAN WEAR</h2>
-      <hr>
       <p style="color: rgb(14, 15, 15);"> Through<b><i> BLVCK ORIGIN</i></b> studios we are looking to indulge the art
         society in our community to come out see proffessional photogtraphs through our platform.</br>
         Our platform offers to give individuals a registeration form on our home section, where they can request for a
@@ -37,7 +36,40 @@
     </div>
   </div>
 </div>
-<div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px;">
+
+<div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px; padding-bottom: 20px;">
+  <h1 style="color: brown; font-style: italic; text-align: center;">Why Blvck Origin?</h1>
+  <div class="col-md-3 col-sm-12">
+      <marquee behavior="scall" direction="left"><h2>We do Outdoor photos, Studio Shoots, Passport Photos That Create Great Memories!!</h2></marquee>
+      </div>
+
+      <div class="col-md-3 col-sm-12 text-center">
+        <div class="card mr-2 d-inline-block shadow-lg">
+            <img src="{{url_for('static',filename='photos/bl/IMG-20201230-WA0011.jpg')}}" class="d-block w-102" style="height: 350px;"
+              alt="...">
+              <p style="color: blue; font-style: italic;">Outdoor photos</p>
+        </div>
+          </div>
+
+          <div class="col-md-3 col-sm-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <img src="{{url_for('static',filename='photos/sty/IMG-20201230-WA0019.jpg')}}" class="d-block w-100" style="height: 250px;"
+                  alt="...">
+                  <p style="color: blue; font-style: italic;">Studio shoots</p>
+              </div>
+              </div>
+
+              <div class="col-md-3 col-sm-12 text-center">
+                <div class="card mr-2 d-inline-block shadow-lg">
+                  <img src="{{url_for('static',filename='photos/face/IMG-20201230-WA0039.jpg')}}" class="d-block w-100" style="height: 250px;"
+                  alt="...">
+                  <p style="color: blue; font-style: italic;">Passport photos</p> 
+                </div>
+                  </div>
+</div>
+
+<!-- <div class="row" style="padding-top: 20px; display: flexbox; padding-left: 20px;">
+  <h1 style="color: black; font-weight: lighter; font-style: italic; text-align: center;">BLVCK ORIGIN PHOTO PORTFOLIO</h1>
   <div class="col-md-4 col-sm-12 text-center">
     <div class="card mr-2 d-inline-block shadow-lg">
       <div class="card-img-top">
@@ -98,7 +130,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-12 text-center">
+  <div class="col-md-4 col-sm-12 text-center">
     <div class="card mr-2 d-inline-block shadow-lg">
       <div class="card-img-top">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -190,7 +222,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-12 text-center">
+  <div class="col-md-4 col-sm-12 text-center">
     <div class="card mr-2 d-inline-block shadow-lg">
       <div class="card-img-top">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -282,7 +314,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-12 text-center">
+  <div class="col-md-4 col-sm-12 text-center">
     <div class="card mr-2 d-inline-block shadow-lg">
       <div class="card-img-top">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -374,7 +406,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-12 text-center">
+  <div class="col-md-4 col-sm-12 text-center">
     <div class="card mr-2 d-inline-block shadow-lg">
       <div class="card-img-top">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -466,7 +498,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-12 text-center">
+  <div class="col-md-4 col-sm-12 text-center">
     <div class="card mr-2 d-inline-block shadow-lg">
       <div class="card-img-top">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -496,8 +528,94 @@
       </div>
     </div>
   </div>
+</div> -->
+
+
+
+<div class="container">
+  <h1 style="font-weight: bolder; font-style: italic; color: black; text-align: center;">ABOUT US</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <marquee behavior="scall" direction="right"><h1 style="font-style:  italic; font-weight: bold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
+        BLVCK ORIGIN</h1></marquee>
+      <img src="{{url_for('static',filename='photos/gp/IMG-20201230-WA0021.jpg')}}" class="d-block w-100" alt="...">
+      <br>
+      <img src="{{url_for('static',filename='photos/gp/IMG-20201230-WA0001.jpg')}}" class="d-block w-100" alt="...">
+      <small><i>The best Urban Wear and photography accross Nairobi and East Africa at large</i></small>
+    </div>
+    <div class="col-md-8">
+      <h2 id="about"
+        style="color: rgb(19, 15, 15);text-align: center; padding-top: 30px;font-weight: 900; padding-bottom: 30px; font-style: italic;">
+        ABOUT BLVCK ORIGIN</h2>
+      <p style="color: rgb(14, 15, 15);"> We are family and event portrate photographers residing in Nairobi ,Kenya. Besides being best in photography we also sell outfits that may sort your preference.
+          e believe that as your portrait photographer, we know there is so much than delivering beautiful images. It's about telling your story. It's about capturing that amaizing giggle and that smile from your
+          little ones. And most importantly the genuine connection you have between your love ones. We strive in creating beautiful images and creating lasting memories for you and your family.
+          </p>
+          <h2
+        style="color: rgb(19, 15, 15);text-align: center; padding-top: 30px;font-weight: 900; padding-bottom: 30px; font-style: italic;">
+        OUR SKILLS</h2>
+        <hr>
+        <p style="font-style: italic; color: blue;">Photography</p>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width:95%; height: 20px;">95%</div>
+        </div><br>
+        
+        <p style="color: blue; font-style: italic;">Videography</p>
+          <div class="progress">
+          <div class="progress-bar bg-warning" style="width:80%; height: 20px;">80%</div>
+        </div><br>
+        
+        <p style="font-style: italic; color: blue;">Editing</p>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width:85%; height: 20px;">85%</div>
+        </div>
+    </div>
+  </div>
 </div>
-<footer class="bg-dark" style="margin-top: 20px;">
+
+
+<div class="container">
+  <h1 style="font-weight: bolder; font-style: italic; color: black; text-align: center;">OUR CONTACTS</h1>
+  <div class="row">
+      <div class="col-md-8">
+          <h2 id="contact"
+              style="color: rgb(19, 15, 15);text-align: center; padding-top: 30px;font-weight: 900; padding-bottom: 30px; font-style: italic;">
+              CONTACT INFORMATION</h2>
+          <p style="color: rgb(14, 15, 15);"> You can find us through the following links and contact information:</p>
+          <ol>
+              <li>Our shop and studio are located in mama ngina street, mutwathi lane. </br> Afya house, third floor
+                  room 26.</li>
+              <br>
+              <li><b>Tel No:</b> <i>0719640643 or 0712345678</i></li>
+              <br>
+              <li>You can follow us on :</li>
+          </ol>
+
+              <div class="text-center text-black" style="text-align: center; padding-top: 10px;">
+
+                  <img src="{{url_for('static',filename='photos/social/pinterest.png')}}">
+                  <small style="font-size: small;">blvck_origin</small>
+
+                  <img src="{{url_for('static',filename='photos/social/twitter.png')}}">
+                  <small style="font-size: small;"> @Blvckorigin</small>
+
+                  <img src="{{url_for('static',filename='photos/social/instagram.png')}}" style="height: 40px; width: 40px;">
+                  <small style="font-size: small;">_blvck_origin</small>
+              </div>
+      </div>
+      <div class="col-md-4">
+        <marquee behavior="scall" direction="right"><h1
+              style="font-style:  italic; text-align: center; font-weight: bold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+              BLVCK ORIGIN</h1></marquee>
+          <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0042.jpg')}}" class="d-block w-100"
+              alt="..." height="300px">
+          <small><i>The best Urban Wear and photography accross Nairobi and East Africa at large</i></small>
+      </div>
+  </div>
+</div>
+
+
+<footer class="bg-dark" style="margin-top: 30px;">
   <div class="text-center text-white" style="text-align: center; padding-top: 10px;">
     <div class="footer">
       <img src="{{url_for('static',filename='photos/social/facebook.png')}}">
@@ -506,6 +624,7 @@
       <img src="{{url_for('static',filename='photos/social/skype.png')}}">
       <img src="{{url_for('static',filename='photos/social/twitter.png')}}">
       <img src="{{url_for('static',filename='photos/social/you_tube.png')}}">
+    </br>
       <p>All content Copyright &copy 2020 BlvckOriginUrbanWear </p>
     </div>
   </div>
