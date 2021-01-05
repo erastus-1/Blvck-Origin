@@ -33,9 +33,11 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-2 border-green rounded-0">
         <div class="container-fluid">
-            <a href="/">
-                <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0042.jpg')}}" alt="" width="150px;" height="100px">
-            </a>
+            <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="/"style="color: white; font-size: 48px; font-weight: 400;"><i class="fa fa-home" style="color: rgb(36, 214, 45);"></i> HOME</a>
+            </li>
+        </ul>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,15 +47,20 @@
                 <ul class="nav navbar-nav navbar-right">
                     <hr>
                     <li>
-                        <a href="{{url_for('main.contact')}}"style="color: white; font-size: large; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-message mr-3"></span> Contact us</a>
+                        <a href="{{url_for('main.contact')}}"style="color: white; font-size: 48px; font-weight: 400;"><i class="fas fa-envelope" style="color: rgb(36, 214, 45);"></i> Contact us</a>
+                    </li>
+                    <hr>
+                    <hr>
+                    <li>
+                        <a href="{{url_for('main.about')}}"style="color: white; font-size: 48px; font-weight: 400;"><i class="material-icons" style="font-size:48px;color: rgb(36, 214, 45);"></i> About</a>
                     </li>
                     <hr>
                     <li>
-                        <a href="{{url_for('auth.logout')}}"style="color: white; font-size: large; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-log-in mr-3"></span> Checkout</a>
+                        <a href="{{url_for('auth.logout')}}"style="color: white; font-size: 48px; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-log-in mr-3"></span> Checkout</a>
                     </li>
                     <hr>
                     <li>
-                        <a href="{{url_for('auth.login')}}"style="color: white; font-size: large; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-log-in mr-3"></span> Login</a>
+                        <a href="{{url_for('auth.login')}}"style="color: white; font-size: 48px; font-weight: 400;"><span style="color: rgb(36, 214, 45)" class="glyphicon glyphicon-log-in mr-3"></span> Login</a>
                     </li>
 
                 </ul>

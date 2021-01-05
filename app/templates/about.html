@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{%block styles%}
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ranga" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ranga" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
+        {%endblock%}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1
+          style="font-style:  italic; font-weight: bold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
+          BLVCK ORIGIN</h1>
+        <img src="{{url_for('static',filename='photos/logo/IMG-20201230-WA0013.jpg')}}" class="d-block w-100" alt="...">
+        <small><i>The best Urban Wear and photography accross Nairobi and East Africa at large</i></small>
+      </div>
+      <div class="col-md-8">
+        <h2
+          style="color: rgb(19, 15, 15);text-align: center; padding-top: 30px;font-weight: 900; padding-bottom: 30px; font-style: italic;">
+          WELCOME TO BLVCK ORIGIN URBAN WEAR</h2>
+        <hr>
+        <p style="color: rgb(14, 15, 15);"> We are family and event portrate photographers residing in Nairobi ,Kenya. Besides being best in photography we also sell outfits that may sort your preference.</br>
+            e believe that as your portrait photographer, we know there is so much than delivering beautiful images. It's about telling your story. It's about capturing that amaizing giggle and that smile from your</br>
+            little ones. And most importantly the genuine connection you have between your love ones. We strive in creating beautiful images and creating lasting memories for you and your family.
+            </p>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock%}
